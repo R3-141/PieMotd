@@ -1,0 +1,70 @@
+# 🔧 PieMotd Configuration / 配置文件
+# 📚 Beginner Tip: Use /piemotd reload after modifying config / 新手提示: 修改配置后使用 /piemotd reload 重载
+
+# 🌈 MOTD Settings / MOTD 设置
+motd:
+  # Enable MOTD feature / 是否启用 MOTD 功能
+  enabled: true
+  # Dynamic update interval (seconds) / 动态更新间隔(秒)
+  update-interval: 10
+  # Enable dynamic updates / 是否启用动态更新
+  update-enabled: true
+  # Random MOTD display / 是否随机显示 MOTD
+  random: true
+
+  # MOTD messages list (Supports MiniMessage format) / MOTD 消息列表 (支持 MiniMessage 格式)
+  messages:
+    - "<gradient:#FF512F:#DD2476>✨ 欢迎来到我们的服务器</gradient>\n<gray>在线玩家: <white>%online%/%max_players%</white> | TPS: <white>%tps%</white></gray>"
+    - "<gradient:#00c6ff:#0072ff>🎮 冒险开始的地方</gradient>\n<gray>时间: <white>%time%</white> | 内存: <white>%memory_used%MB/%memory_max%MB</white></gray>"
+    - "<rainbow>🌟 特色服务器 🌟</rainbow>\n<gray>今日活动: <white>副本挑战赛</white></gray>"
+
+# 🖼️ Server Icon Settings / 服务器头像设置
+server-icon:
+  # Enable server icon feature / 是否启用头像功能
+  enabled: true
+  # Default icon path (relative to plugin directory) / 默认头像路径 (相对于插件目录)
+  default: "icons/default.png"
+  # Rotation interval (seconds, supports decimals) / 轮换间隔(秒，支持小数)
+  rotation-interval: 10.0
+  # Rotation mode: RANDOM, SEQUENTIAL, TIME / 轮换模式: RANDOM(随机), SEQUENTIAL(顺序), TIME(按时间)
+  rotation-mode: "RANDOM"
+
+  # Icons list / 头像列表
+  icons:
+    - "icons/icon1.png"
+    - "icons/icon2.png"
+    - "icons/icon3.png"
+
+# 🎉 Welcome Title Settings / 欢迎标题设置
+welcome:
+  # Enable welcome feature / 是否启用欢迎功能
+  enabled: true
+  # Display mode: FIRST_JOIN, EVERY_TIME, ONCE_PER_SESSION / 显示模式: FIRST_JOIN(仅首次), EVERY_TIME(每次), ONCE_PER_SESSION(每次会话)
+  display-mode: "EVERY_TIME"
+
+  # Title settings / 标题设置
+  title:
+    # Main title (Supports MiniMessage format) / 主标题 (支持 MiniMessage 格式)
+    main: "<gradient:#FF512F:#DD2476>欢迎 %player%!</gradient>"
+    # Subtitle / 副标题
+    subtitle: "<gray>祝你游戏愉快！现在时间%time%</gray>"
+    # Display time settings (ticks) / 显示时间设置 (刻)
+    fade-in: 20
+    stay: 100
+    fade-out: 20
+
+  # Welcome sound / 欢迎音效
+  sound:
+    enabled: true
+    sound: "entity.player.levelup"
+    volume: 1.0
+    pitch: 1.0
+
+# 🔧 Plugin Settings / 插件设置
+settings:
+  # Language setting: zh_cn or en_us / 语言设置: zh_cn 或 en_us
+  language: "zh_cn"
+  # Debug mode / 调试模式
+  debug: false
+  # Auto backup config / 自动备份配置
+  auto-backup: true

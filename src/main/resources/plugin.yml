@@ -1,0 +1,26 @@
+name: PieMotd
+version: 1.0.0
+main: com.rakey.piemotd.PieMotd
+api-version: "1.20"
+description: 一个功能强大的动态MOTD、服务器头像和欢迎标题插件
+author: rakey
+website: https://github.com/rakey/PieMotd
+
+commands:
+  piemotd:
+    description: PieMotd 主命令
+    aliases: [pmotd, pm]
+    usage: /<command> reload
+
+permissions:
+  piemotd.*:
+    description: 所有 PieMotd 权限
+    children:
+      piemotd.admin: true
+      piemotd.reload: true
+  piemotd.admin:
+    description: 管理员权限
+    default: op
+  piemotd.reload:
+    description: 重载插件权限
+    default: op

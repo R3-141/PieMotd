@@ -1,0 +1,43 @@
+# 🌍 PieMotd Multi-language Configuration
+
+zh_cn:
+  # Plugin messages
+  plugin:
+    prefix: "&6[&ePieMotd&6] &f"
+    reloaded: "配置已重载!"
+    no-permission: "&c你没有权限使用此命令."
+    unknown-command: "&c未知命令. 使用 &f/piemotd reload"
+    error-config: "&c配置文件错误，已恢复备份。请检查控制台信息。"
+
+  # Welcome messages
+  welcome:
+    first-join: "&e欢迎新玩家 &6%player% &e加入服务器!"
+    returning: "&a欢迎 &2%player% &a回到服务器!"
+
+  # Time greetings
+  time:
+    morning: "早上好"
+    afternoon: "下午好"
+    evening: "晚上好"
+    night: "晚上好"
+
+en_us:
+  # Plugin messages
+  plugin:
+    prefix: "&6[&ePieMotd&6] &f"
+    reloaded: "Configuration reloaded!"
+    no-permission: "&cYou don't have permission to use this command."
+    unknown-command: "&cUnknown command. Use &f/piemotd reload"
+    error-config: "&cConfig error, backup restored. Please check console."
+
+  # Welcome messages
+  welcome:
+    first-join: "&eWelcome new player &6%player% &eto the server!"
+    returning: "&aWelcome back &2%player% &ato the server!"
+
+  # Time greetings
+  time:
+    morning: "Good morning"
+    afternoon: "Good afternoon"
+    evening: "Good evening"
+    night: "Good night"
